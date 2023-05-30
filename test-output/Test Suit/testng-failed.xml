@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Test Suit]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="Verify submit create trade form without fill up form(failed)">
+    <classes>
+      <class name="Test.OpenTradesTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="submitWithBlankFieldTest"/>
+        </methods>
+      </class> <!-- Test.OpenTradesTestcases -->
+    </classes>
+  </test> <!-- Verify submit create trade form without fill up form(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify functionality of Searchbar(failed)">
+    <classes>
+      <class name="Test.OpenTradesTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="searchbar"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.OpenTradesTestcases -->
+    </classes>
+  </test> <!-- Verify functionality of Searchbar(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify functionality of Table Test(failed)">
+    <classes>
+      <class name="Test.OpenTradesTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="table_Test"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.OpenTradesTestcases -->
+    </classes>
+  </test> <!-- Verify functionality of Table Test(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify functionality of Flag trades(failed)">
+    <classes>
+      <class name="Test.ViewTradePageTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="flagTrade"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.ViewTradePageTestcases -->
+    </classes>
+  </test> <!-- Verify functionality of Flag trades(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify functionality of Manage Trades(failed)">
+    <classes>
+      <class name="Test.ViewTradePageTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="manageTrades"/>
+        </methods>
+      </class> <!-- Test.ViewTradePageTestcases -->
+    </classes>
+  </test> <!-- Verify functionality of Manage Trades(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify Functinality of Table&#039;s feature(failed)">
+    <classes>
+      <class name="Test.MonthlyHistoryTestcases">
+        <methods>
+          <include name="tableTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.MonthlyHistoryTestcases -->
+    </classes>
+  </test> <!-- Verify Functinality of Table's feature(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify redirection of symbol link in monthly history page(failed)">
+    <classes>
+      <class name="Test.MonthlyHistoryTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="symbolLinkRedirection"/>
+        </methods>
+      </class> <!-- Test.MonthlyHistoryTestcases -->
+    </classes>
+  </test> <!-- Verify redirection of symbol link in monthly history page(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify redirection of chart link in monthly history page(failed)">
+    <classes>
+      <class name="Test.MonthlyHistoryTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="chartLInkRedirection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.MonthlyHistoryTestcases -->
+    </classes>
+  </test> <!-- Verify redirection of chart link in monthly history page(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify redirection of create trade link (failed)">
+    <classes>
+      <class name="Test.MonthlyHistoryTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createTradelinkRedirection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.MonthlyHistoryTestcases -->
+    </classes>
+  </test> <!-- Verify redirection of create trade link (failed) -->
+  <test thread-count="2" parallel="methods" name="Verify functionality of EDIT page features(failed)">
+    <classes>
+      <class name="Test.TraderAccountDetailsTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="editpageFunctionality"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.TraderAccountDetailsTestcases -->
+    </classes>
+  </test> <!-- Verify functionality of EDIT page features(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify that comment section in user able to search comment(failed)">
+    <classes>
+      <class name="Test.TraderAccountDetailsTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="commentSectionTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.TraderAccountDetailsTestcases -->
+    </classes>
+  </test> <!-- Verify that comment section in user able to search comment(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify column icon functionality in comment list(failed)">
+    <classes>
+      <class name="Test.TraderAccountDetailsTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="columnIcon_CommentList_Test"/>
+        </methods>
+      </class> <!-- Test.TraderAccountDetailsTestcases -->
+    </classes>
+  </test> <!-- Verify column icon functionality in comment list(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify functionality of Technical history page table(failed)">
+    <classes>
+      <class name="Test.TechnicalHistoryTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="tableTest"/>
+        </methods>
+      </class> <!-- Test.TechnicalHistoryTestcases -->
+    </classes>
+  </test> <!-- Verify functionality of Technical history page table(failed) -->
+  <test thread-count="2" parallel="methods" name="Verify functionality of Create Trade link in back month history page(failed)">
+    <classes>
+      <class name="Test.TechnicalHistoryTestcases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createTradelinkRedirection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.TechnicalHistoryTestcases -->
+    </classes>
+  </test> <!-- Verify functionality of Create Trade link in back month history page(failed) -->
+</suite> <!-- Failed suite [Test Suit] -->

@@ -1,0 +1,23 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/Screenshots/
+/test-output
+
+# no .log files
+*.log
+
+# but do track lib.log, even though you're ignoring .log files above
+!lib.log
+
+# ignore all .txt files in the doc/ directory
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+
+# Ignore everything in the build/ directory
+build/
+
+# Ignore .env files
+.env

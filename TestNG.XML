@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suit" parallel="true" thread-count="2">
+
+    <test name="Verify login with valid credential">
+        <classes>
+            <class name="Test.LoginPageTestcases">
+                <methods>
+
+                    <include name="login_with_validData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify login with invalid credential">
+        <classes>
+            <class name="Test.LoginPageTestcases">
+                <methods>
+                    <include name="login_with_invalidData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Signup with valid Data">
+        <classes>
+            <class name="Test.SignupPageTestCases">
+                <methods>
+                    <include name="signupPageTestcases"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify My Trades menu content">
+        <classes>
+            <class name="Test.MyTradesTestcases">
+                <methods>
+                    <include name="my_Trade_value"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Redirection of My Trades menu content">
+        <classes>
+            <class name="Test.MyTradesTestcases">
+                <methods>
+                    <include name="my_Trade_menus"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify user able to create trade using valid data">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="createTrades"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of Open page">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="openTradesUI"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of profile price check field">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="profile_price_Check"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify submit create trade form without fill up form">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="submitWithBlankFieldTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality stop condition fild">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="stop_Condition_Check"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Checkbox fild">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="checkbox_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Remove button">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="removeOption_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of cancle option">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="cancleOption_CallTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Searchbar">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="searchbar"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Column option">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="column_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Full Screen icon">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="fullScreen_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Table Test">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="table_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Pagination icons">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="pagination_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of refresh icons">
+        <classes>
+            <class name="Test.OpenTradesTestcases">
+                <methods>
+                    <include name="refreshData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of view trade page">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="viewTradeUI"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Edit trade">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="editTrade"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Flag trades">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="flagTrade"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Manage Trades">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="manageTrades"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of other action menus">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="setOther_ActionMenu"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Overview feature in view trade page">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="overviewTestcases"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Comment search in view trade page">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="commentSearchTestcases"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify add comment without fill up comment field in view trade page">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="addCommentBlankField"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Add comment with long sentance data in view trade page">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="AddComment_longSentanceData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify add comment by save and close trades">
+        <classes>
+            <class name="Test.ViewTradePageTestcases">
+                <methods>
+                    <include name="AddComment_SaveAndCloseTrade"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of Cancelled page.">
+        <classes>
+            <class name="Test.CancelledPageTestcases">
+                <methods>
+                    <include name="cancelledPageUI"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of close Page.">
+        <classes>
+            <class name="Test.ClosePageTestCases">
+                <methods>
+                    <include name="closePageUITest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of my team page.">
+        <classes>
+            <class name="Test.CancelledPageTestcases">
+                <methods>
+                    <include name="myTeamPageUITest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of monthly History page.">
+        <classes>
+            <class name="Test.MonthlyHistoryTestcases">
+                <methods>
+                    <include name="monthlyHistoryUI"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Submit button">
+        <classes>
+            <class name="Test.MonthlyHistoryTestcases">
+                <methods>
+                    <include name="submitbutton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Functinality of Table's feature">
+        <classes>
+            <class name="Test.MonthlyHistoryTestcases">
+                <methods>
+                    <include name="tableTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify redirection of symbol link in monthly history page">
+        <classes>
+            <class name="Test.MonthlyHistoryTestcases">
+                <methods>
+                    <include name="symbolLinkRedirection"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify redirection of chart link in monthly history page">
+        <classes>
+            <class name="Test.MonthlyHistoryTestcases">
+                <methods>
+                    <include name="chartLInkRedirection"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify redirection of create trade link ">
+        <classes>
+            <class name="Test.MonthlyHistoryTestcases">
+                <methods>
+                    <include name="createTradelinkRedirection"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of My Team page.">
+        <classes>
+            <class name="Test.MyTeamPageTestCases">
+                <methods>
+                    <include name="myTeamPageUITest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of Trader account Details UI">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="traderAccountDetailsUI"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify redirection of view equity curve">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="redirectionOf_ViewEquity"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify redirection of Edit button">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="redirectionOf_Edit_Button"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify redirection of View performance button">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="redirectionOf_ViewPerformance_Button"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of EDIT page features">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="editpageFunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of view performance feature">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="viewPerformanceFunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify validation message for edit data with blank field">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="editDataWithBlankFieldTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of trade type field downdown">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="tradeTypeFieldDropdownTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of select multiple option trade">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="selectmultipleOptionInTradeType"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of notification field">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="notificationFieldUITest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify that user able to select notification from notification field">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="notificationFieldTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify that comment section in user able to search comment">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="commentSectionTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify column icon functionality in comment list">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="columnIcon_CommentList_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of full screen icon in comment list">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="fullScreenIcon_Commentlist_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of save comment in trader list">
+        <classes>
+            <class name="Test.TraderAccountDetailsTestcases">
+                <methods>
+                    <include name="savecomment_traderList_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of verified page ">
+        <classes>
+            <class name="Test.VerifiedPageTestcases">
+                <methods>
+                    <include name="verifiedPageUITest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify UI of Technical history page ">
+        <classes>
+            <class name="Test.TechnicalHistoryTestcases">
+                <methods>
+                    <include name="technicalHistoryUITest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Technical history page submit button ">
+        <classes>
+            <class name="Test.TechnicalHistoryTestcases">
+                <methods>
+                    <include name="submitbutton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Technical history page table">
+        <classes>
+            <class name="Test.TechnicalHistoryTestcases">
+                <methods>
+                    <include name="tableTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of Create Trade link in back month history page">
+        <classes>
+            <class name="Test.TechnicalHistoryTestcases">
+                <methods>
+                    <include name="createTradelinkRedirection"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify functionality of download file in back month history page">
+        <classes>
+            <class name="Test.TechnicalHistoryTestcases">
+                <methods>
+                    <include name="downloadFileVerification"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

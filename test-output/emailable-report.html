@@ -1,0 +1,1814 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Verify login with valid credential</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">21.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">Verify login with invalid credential</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">13.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t3">Verify Signup with valid Data</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">37.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t4">Verify My Trades menu content</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">20.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t5">Verify Redirection of My Trades menu content</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">65.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t6">Verify user able to create trade using valid data</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">128.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t7">Verify UI of Open page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">30.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t8">Verify functionality of profile price check field</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">45.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t9">Verify submit create trade form without fill up form</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">64.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t10">Verify functionality stop condition fild</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">55.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t11">Verify functionality of Checkbox fild</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">37.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t12">Verify functionality of Remove button</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">69.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t13">Verify functionality of cancle option</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">59.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t14">Verify functionality of Searchbar</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">49.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t15">Verify functionality of Column option</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">43.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t16">Verify functionality of Full Screen icon</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">45.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t17">Verify functionality of Table Test</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">77.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t18">Verify functionality of Pagination icons</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">54.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t19">Verify functionality of refresh icons</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">36.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t20">Verify UI of view trade page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">38.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t21">Verify functionality of Edit trade</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">51.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t22">Verify functionality of Flag trades</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">135.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t23">Verify functionality of Manage Trades</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">181.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t24">Verify functionality of other action menus</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t25">Verify functionality of Overview feature in view trade page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">90.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t26">Verify functionality of Comment search in view trade page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">55.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t27">Verify add comment without fill up comment field in view trade page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">36.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t28">Verify Add comment with long sentance data in view trade page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">48.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t29">Verify add comment by save and close trades</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">54.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t30">Verify UI of Cancelled page.</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">24.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t31">Verify UI of close Page.</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">30.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t32">Verify UI of my team page.</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t33">Verify UI of monthly History page.</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">22.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t34">Verify functionality of Submit button</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">62.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t35">Verify Functinality of Table's feature</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">204.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t36">Verify redirection of symbol link in monthly history page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">74.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t37">Verify redirection of chart link in monthly history page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">53.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t38">Verify redirection of create trade link </a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">74.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t39">Verify UI of My Team page.</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">29.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t40">Verify UI of Trader account Details UI</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">45.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t41">Verify redirection of view equity curve</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">81.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t42">Verify redirection of Edit button</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">69.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t43">Verify redirection of View performance button</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">60.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t44">Verify functionality of EDIT page features</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">128.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t45">Verify functionality of view performance feature</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">72.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t46">Verify validation message for edit data with blank field</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">94.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t47">Verify functionality of trade type field downdown</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">84.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t48">Verify functionality of select multiple option trade</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">216.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t49">Verify UI of notification field</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">83.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t50">Verify that user able to select notification from notification field</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">218.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t51">Verify that comment section in user able to search comment</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">165.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t52">Verify column icon functionality in comment list</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">127.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t53">Verify functionality of full screen icon in comment list</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">117.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t54">Verify functionality of save comment in trader list</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">113.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t55">Verify UI of verified page </a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">28.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t56">Verify UI of Technical history page </a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">24.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t57">Verify functionality of Technical history page submit button </a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">99.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t58">Verify functionality of Technical history page table</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">228.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t59">Verify functionality of Create Trade link in back month history page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">117.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t60">Verify functionality of download file in back month history page</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">92.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">55</td><td class="numi">55</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">4,491.1 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Verify login with valid credential &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.LoginPageTestcases</td><td><a href="#m1"><b>login_with_validData</b>  </a></td><td class="numi">1</td><td>1685076709950</td><td class="numi">14940</td></tr>
+<tr id="t2"><th colspan="5">Verify login with invalid credential &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.LoginPageTestcases</td><td><a href="#m2"><b>login_with_invalidData</b>  </a></td><td class="numi">1</td><td>1685076726457</td><td class="numi">12385</td></tr>
+<tr id="t3"><th colspan="5">Verify Signup with valid Data &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.SignupPageTestCases</td><td><a href="#m3"><b>signupPageTestcases</b>  </a></td><td class="numi">1</td><td>1685076740969</td><td class="numi">35392</td></tr>
+<tr id="t4"><th colspan="5">Verify My Trades menu content &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MyTradesTestcases</td><td><a href="#m4"><b>my_Trade_value</b>  </a></td><td class="numi">1</td><td>1685076778462</td><td class="numi">18369</td></tr>
+<tr id="t5"><th colspan="5">Verify Redirection of My Trades menu content &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MyTradesTestcases</td><td><a href="#m5"><b>my_Trade_menus</b>  </a></td><td class="numi">1</td><td>1685076798412</td><td class="numi">64227</td></tr>
+<tr id="t6"><th colspan="5">Verify user able to create trade using valid data &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m6"><b>createTrades</b>  </a></td><td class="numi">1</td><td>1685076864488</td><td class="numi">126267</td></tr>
+<tr id="t7"><th colspan="5">Verify UI of Open page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m7"><b>openTradesUI</b>  </a></td><td class="numi">1</td><td>1685076992694</td><td class="numi">28768</td></tr>
+<tr id="t8"><th colspan="5">Verify functionality of profile price check field &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m8"><b>profile_price_Check</b>  </a></td><td class="numi">1</td><td>1685077023154</td><td class="numi">44219</td></tr>
+<tr id="t9"><th colspan="5">Verify submit create trade form without fill up form &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m9"><b>submitWithBlankFieldTest</b>  </a></td><td class="numi">1</td><td>1685077068868</td><td class="numi">63416</td></tr>
+<tr id="t10"><th colspan="5">Verify functionality stop condition fild &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m10"><b>stop_Condition_Check</b>  </a></td><td class="numi">1</td><td>1685077134002</td><td class="numi">54111</td></tr>
+<tr id="t11"><th colspan="5">Verify functionality of Checkbox fild &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m11"><b>checkbox_Test</b>  </a></td><td class="numi">1</td><td>1685077190232</td><td class="numi">34813</td></tr>
+<tr id="t12"><th colspan="5">Verify functionality of Remove button &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m12"><b>removeOption_Test</b>  </a></td><td class="numi">1</td><td>1685077227055</td><td class="numi">67272</td></tr>
+<tr id="t13"><th colspan="5">Verify functionality of cancle option &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m13"><b>cancleOption_CallTest</b>  </a></td><td class="numi">1</td><td>1685077296016</td><td class="numi">58051</td></tr>
+<tr id="t14"><th colspan="5">Verify functionality of Searchbar &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m14"><b>searchbar</b>  </a></td><td class="numi">1</td><td>1685077355675</td><td class="numi">47689</td></tr>
+<tr id="t15"><th colspan="5">Verify functionality of Column option &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m15"><b>column_Test</b>  </a></td><td class="numi">1</td><td>1685077405337</td><td class="numi">41193</td></tr>
+<tr id="t16"><th colspan="5">Verify functionality of Full Screen icon &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m16"><b>fullScreen_Test</b>  </a></td><td class="numi">1</td><td>1685077448185</td><td class="numi">43496</td></tr>
+<tr id="t17"><th colspan="5">Verify functionality of Table Test &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m17"><b>table_Test</b>  </a></td><td class="numi">1</td><td>1685077493202</td><td class="numi">75527</td></tr>
+<tr id="t18"><th colspan="5">Verify functionality of Pagination icons &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m18"><b>pagination_Test</b>  </a></td><td class="numi">1</td><td>1685077571004</td><td class="numi">52368</td></tr>
+<tr id="t19"><th colspan="5">Verify functionality of refresh icons &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.OpenTradesTestcases</td><td><a href="#m19"><b>refreshData</b>  </a></td><td class="numi">1</td><td>1685077624908</td><td class="numi">34769</td></tr>
+<tr id="t20"><th colspan="5">Verify UI of view trade page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m20"><b>viewTradeUI</b>  </a></td><td class="numi">1</td><td>1685077661366</td><td class="numi">36328</td></tr>
+<tr id="t21"><th colspan="5">Verify functionality of Edit trade &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m21"><b>editTrade</b>  </a></td><td class="numi">1</td><td>1685077699473</td><td class="numi">49889</td></tr>
+<tr id="t22"><th colspan="5">Verify functionality of Flag trades &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m22"><b>flagTrade</b>  </a></td><td class="numi">1</td><td>1685077751074</td><td class="numi">133942</td></tr>
+<tr id="t23"><th colspan="5">Verify functionality of Manage Trades &#8212; failed</th></tr>
+<tr class="failedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m23"><b>manageTrades</b>  </a></td><td class="numi">1</td><td>1685077886965</td><td class="numi">179529</td></tr>
+<tr id="t25"><th colspan="5">Verify functionality of Overview feature in view trade page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m24"><b>overviewTestcases</b>  </a></td><td class="numi">1</td><td>1685078068279</td><td class="numi">88415</td></tr>
+<tr id="t26"><th colspan="5">Verify functionality of Comment search in view trade page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m25"><b>commentSearchTestcases</b>  </a></td><td class="numi">1</td><td>1685078158071</td><td class="numi">54444</td></tr>
+<tr id="t27"><th colspan="5">Verify add comment without fill up comment field in view trade page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m26"><b>addCommentBlankField</b>  </a></td><td class="numi">1</td><td>1685078213883</td><td class="numi">35230</td></tr>
+<tr id="t28"><th colspan="5">Verify Add comment with long sentance data in view trade page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m27"><b>AddComment_longSentanceData</b>  </a></td><td class="numi">1</td><td>1685078250443</td><td class="numi">47259</td></tr>
+<tr id="t29"><th colspan="5">Verify add comment by save and close trades &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ViewTradePageTestcases</td><td><a href="#m28"><b>AddComment_SaveAndCloseTrade</b>  </a></td><td class="numi">1</td><td>1685078299140</td><td class="numi">52573</td></tr>
+<tr id="t30"><th colspan="5">Verify UI of Cancelled page. &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.CancelledPageTestcases</td><td><a href="#m29"><b>cancelledPageUI</b>  </a></td><td class="numi">1</td><td>1685078353063</td><td class="numi">23579</td></tr>
+<tr id="t31"><th colspan="5">Verify UI of close Page. &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.ClosePageTestCases</td><td><a href="#m30"><b>closePageUITest</b>  </a></td><td class="numi">1</td><td>1685078377970</td><td class="numi">28979</td></tr>
+<tr id="t33"><th colspan="5">Verify UI of monthly History page. &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MonthlyHistoryTestcases</td><td><a href="#m31"><b>monthlyHistoryUI</b>  </a></td><td class="numi">1</td><td>1685078408252</td><td class="numi">21017</td></tr>
+<tr id="t34"><th colspan="5">Verify functionality of Submit button &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MonthlyHistoryTestcases</td><td><a href="#m32"><b>submitbutton</b>  </a></td><td class="numi">1</td><td>1685078430614</td><td class="numi">61328</td></tr>
+<tr id="t35"><th colspan="5">Verify Functinality of Table's feature &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MonthlyHistoryTestcases</td><td><a href="#m33"><b>tableTest</b>  </a></td><td class="numi">1</td><td>1685078493291</td><td class="numi">202826</td></tr>
+<tr id="t36"><th colspan="5">Verify redirection of symbol link in monthly history page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MonthlyHistoryTestcases</td><td><a href="#m34"><b>symbolLinkRedirection</b>  </a></td><td class="numi">1</td><td>1685078697656</td><td class="numi">72898</td></tr>
+<tr id="t37"><th colspan="5">Verify redirection of chart link in monthly history page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MonthlyHistoryTestcases</td><td><a href="#m35"><b>chartLInkRedirection</b>  </a></td><td class="numi">1</td><td>1685078771898</td><td class="numi">51958</td></tr>
+<tr id="t38"><th colspan="5">Verify redirection of create trade link  &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MonthlyHistoryTestcases</td><td><a href="#m36"><b>createTradelinkRedirection</b>  </a></td><td class="numi">1</td><td>1685078825193</td><td class="numi">73417</td></tr>
+<tr id="t39"><th colspan="5">Verify UI of My Team page. &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.MyTeamPageTestCases</td><td><a href="#m37"><b>myTeamPageUITest</b>  </a></td><td class="numi">1</td><td>1685078899989</td><td class="numi">27800</td></tr>
+<tr id="t40"><th colspan="5">Verify UI of Trader account Details UI &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m38"><b>traderAccountDetailsUI</b>  </a></td><td class="numi">1</td><td>1685078929185</td><td class="numi">44335</td></tr>
+<tr id="t41"><th colspan="5">Verify redirection of view equity curve &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m39"><b>redirectionOf_ViewEquity</b>  </a></td><td class="numi">1</td><td>1685078974831</td><td class="numi">80565</td></tr>
+<tr id="t42"><th colspan="5">Verify redirection of Edit button &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m40"><b>redirectionOf_Edit_Button</b>  </a></td><td class="numi">1</td><td>1685079056735</td><td class="numi">67855</td></tr>
+<tr id="t43"><th colspan="5">Verify redirection of View performance button &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m41"><b>redirectionOf_ViewPerformance_Button</b>  </a></td><td class="numi">1</td><td>1685079125926</td><td class="numi">58696</td></tr>
+<tr id="t44"><th colspan="5">Verify functionality of EDIT page features &#8212; failed</th></tr>
+<tr class="failedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m42"><b>editpageFunctionality</b>  </a></td><td class="numi">1</td><td>1685079185951</td><td class="numi">126703</td></tr>
+<tr id="t45"><th colspan="5">Verify functionality of view performance feature &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m43"><b>viewPerformanceFunctionality</b>  </a></td><td class="numi">1</td><td>1685079314138</td><td class="numi">71147</td></tr>
+<tr id="t46"><th colspan="5">Verify validation message for edit data with blank field &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m44"><b>editDataWithBlankFieldTest</b>  </a></td><td class="numi">1</td><td>1685079386768</td><td class="numi">92730</td></tr>
+<tr id="t47"><th colspan="5">Verify functionality of trade type field downdown &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m45"><b>tradeTypeFieldDropdownTest</b>  </a></td><td class="numi">1</td><td>1685079480821</td><td class="numi">83113</td></tr>
+<tr id="t48"><th colspan="5">Verify functionality of select multiple option trade &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m46"><b>selectmultipleOptionInTradeType</b>  </a></td><td class="numi">1</td><td>1685079565292</td><td class="numi">215533</td></tr>
+<tr id="t49"><th colspan="5">Verify UI of notification field &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m47"><b>notificationFieldUITest</b>  </a></td><td class="numi">1</td><td>1685079782217</td><td class="numi">82021</td></tr>
+<tr id="t50"><th colspan="5">Verify that user able to select notification from notification field &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m48"><b>notificationFieldTest</b>  </a></td><td class="numi">1</td><td>1685079865603</td><td class="numi">216675</td></tr>
+<tr id="t51"><th colspan="5">Verify that comment section in user able to search comment &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m49"><b>commentSectionTest</b>  </a></td><td class="numi">1</td><td>1685080083644</td><td class="numi">163828</td></tr>
+<tr id="t52"><th colspan="5">Verify column icon functionality in comment list &#8212; failed</th></tr>
+<tr class="failedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m50"><b>columnIcon_CommentList_Test</b>  </a></td><td class="numi">1</td><td>1685080248881</td><td class="numi">125752</td></tr>
+<tr id="t53"><th colspan="5">Verify functionality of full screen icon in comment list &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m51"><b>fullScreenIcon_Commentlist_Test</b>  </a></td><td class="numi">1</td><td>1685080376694</td><td class="numi">115286</td></tr>
+<tr id="t54"><th colspan="5">Verify functionality of save comment in trader list &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TraderAccountDetailsTestcases</td><td><a href="#m52"><b>savecomment_traderList_Test</b>  </a></td><td class="numi">1</td><td>1685080493331</td><td class="numi">112136</td></tr>
+<tr id="t55"><th colspan="5">Verify UI of verified page  &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.VerifiedPageTestcases</td><td><a href="#m53"><b>verifiedPageUITest</b>  </a></td><td class="numi">1</td><td>1685080606870</td><td class="numi">26756</td></tr>
+<tr id="t56"><th colspan="5">Verify UI of Technical history page  &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TechnicalHistoryTestcases</td><td><a href="#m54"><b>technicalHistoryUITest</b>  </a></td><td class="numi">1</td><td>1685080634986</td><td class="numi">22804</td></tr>
+<tr id="t57"><th colspan="5">Verify functionality of Technical history page submit button  &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TechnicalHistoryTestcases</td><td><a href="#m55"><b>submitbutton</b>  </a></td><td class="numi">1</td><td>1685080659147</td><td class="numi">98033</td></tr>
+<tr id="t58"><th colspan="5">Verify functionality of Technical history page table &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TechnicalHistoryTestcases</td><td><a href="#m56"><b>tableTest</b>  </a></td><td class="numi">1</td><td>1685080758542</td><td class="numi">227223</td></tr>
+<tr id="t59"><th colspan="5">Verify functionality of Create Trade link in back month history page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TechnicalHistoryTestcases</td><td><a href="#m57"><b>createTradelinkRedirection</b>  </a></td><td class="numi">1</td><td>1685080987101</td><td class="numi">115861</td></tr>
+<tr id="t60"><th colspan="5">Verify functionality of download file in back month history page &#8212; passed</th></tr>
+<tr class="passedodd"><td>Test.TechnicalHistoryTestcases</td><td><a href="#m58"><b>downloadFileVerification</b>  </a></td><td class="numi">1</td><td>1685081104278</td><td class="numi">90624</td></tr>
+</table>
+<h1>Verify login with valid credential</h1>
+<h2 id="m1">Test.LoginPageTestcases:login_with_validData</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify login with invalid credential</h1>
+<h2 id="m2">Test.LoginPageTestcases:login_with_invalidData</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify Signup with valid Data</h1>
+<h2 id="m3">Test.SignupPageTestCases:signupPageTestcases</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//a[normalize-space()='Create an account']<br/>
+Step :: Steps: Clicked on Create Account link<br/>
+Clicked on element//input[@placeholder='Enter first name']<br/>
+Step :: Steps: Entered data in First name field<br/>
+Clicked on element//input[@placeholder='Enter last name']<br/>
+Step :: Steps: Entered data in Last name field<br/>
+Step :: Steps: Email ID entered<br/>
+Clicked on element//input[@placeholder='Enter password']<br/>
+Step :: Steps: Entered Data in Password Field<br/>
+Clicked on element//input[@placeholder='Confirm password']<br/>
+Step :: Steps: Entered Data in Confirm Password Field<br/>
+Clicked on element//button[normalize-space()='CREATE AN ACCOUNT']<br/>
+Step :: Steps: Clicked on create account button<br/>
+Step :: Steps: Signup Success message<br/>
+Clicked on element//button[text()='Okay']<br/>
+Step :: Steps: Clicked on Okay button<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify My Trades menu content</h1>
+<h2 id="m4">Test.MyTradesTestcases:my_Trade_value</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify Redirection of My Trades menu content</h1>
+<h2 id="m5">Test.MyTradesTestcases:my_Trade_menus</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on Open menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[normalize-space()='Closed']<br/>
+Step :: Clicked on Closed menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[text()='Pending']<br/>
+Step :: Clicked on Pending menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[@href='/my-trades/cancelled']<br/>
+Step :: Clicked on Cancelled menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[@href='/my-trades/verified']<br/>
+Step :: Clicked on Verification menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[normalize-space()='My Team']<br/>
+Step :: Clicked on My Team menu<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify user able to create trade using valid data</h1>
+<h2 id="m6">Test.OpenTradesTestcases:createTrades</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action option<br/>
+Clicked on element//a[@class='edit-link-btn']<br/>
+Step :: Clicked on Create trade option<br/>
+Clicked on element//select[@id='demo-simple-select-label']<br/>
+Step :: Select security type field<br/>
+Clicked on element//select[@name='profitCondition']<br/>
+Step :: Select profile condition<br/>
+Clicked on element//select[@name='tradeType']<br/>
+Step :: Select Trade type condition<br/>
+Clicked on element//input[@name='profitPrice']<br/>
+Step :: Add data in profile price field<br/>
+Clicked on element//div[@class=' css-19bb58m']<br/>
+Step :: Select symbol from dropdown<br/>
+Clicked on element//select[@name='callOrPut']<br/>
+Step :: Select Direction<br/>
+Clicked on element//select[@name='stopCondition']<br/>
+Step :: Select profile condition<br/>
+Clicked on element//select[@name='timeFrame']<br/>
+Step :: Select Time frame<br/>
+Clicked on element//input[@name='stopPrice']<br/>
+Step :: Select Stop Price<br/>
+Clicked on element//select[@name='entryCondition']<br/>
+Step :: Select Entry condition<br/>
+Clicked on element//select[@name='stopTimeFrame']<br/>
+Step :: Select Stop timeframe condition<br/>
+Clicked on element//select[@name='exitCondition']<br/>
+Step :: Select Exit condition<br/>
+Clicked on element(//input[@id='recieveTxt1'])[1]<br/>
+Step :: Select checkbox all in<br/>
+Clicked on element//textarea[@id='FormControlTextarea']<br/>
+Step :: Add comment field filled up<br/>
+Scrolled down to //button[text()='Save']<br/>
+Clicked on //button[text()='Save']<br/>
+Step :: Clicked on Save button<br/>
+Step :: List of pending page title show after create trade<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of Open page</h1>
+<h2 id="m7">Test.OpenTradesTestcases:openTradesUI</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of profile price check field</h1>
+<h2 id="m8">Test.OpenTradesTestcases:profile_price_Check</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action option<br/>
+Clicked on element//a[@class='edit-link-btn']<br/>
+Step :: Clicked on Create trade option<br/>
+Clicked on element//select[@name='profitCondition']<br/>
+Step :: Select profile condition<br/>
+Clicked on element//select[@name='profitCondition']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify submit create trade form without fill up form</h1>
+<h2 id="m9">Test.OpenTradesTestcases:submitWithBlankFieldTest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action option<br/>
+Clicked on element//a[@class='edit-link-btn']<br/>
+Step :: Clicked on Create trade option<br/>
+Clicked on element//button[text()='Save']<br/>
+Clicked on element//button[text()='Save']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality stop condition fild</h1>
+<h2 id="m10">Test.OpenTradesTestcases:stop_Condition_Check</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action option<br/>
+Clicked on element//a[@class='edit-link-btn']<br/>
+Step :: Clicked on Create trade option<br/>
+Clicked on element//select[@name='stopCondition']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Checkbox fild</h1>
+<h2 id="m11">Test.OpenTradesTestcases:checkbox_Test</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action option<br/>
+Clicked on element//a[@class='edit-link-btn']<br/>
+Step :: Clicked on Create trade option<br/>
+Scrolled down to (//input[@id='recieveTxt1'])[1]<br/>
+Clicked on (//input[@id='recieveTxt1'])[1]<br/>
+Step :: Selected checkbox all in<br/>
+Clicked on element(//input[@id='recieveTxt1'])[2]<br/>
+Step :: Selected virtual checkbox<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Remove button</h1>
+<h2 id="m12">Test.OpenTradesTestcases:removeOption_Test</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//button[normalize-space()='Remove']<br/>
+Step :: Clicked on remove button<br/>
+Clicked on element//button[normalize-space()='All Cancelled']<br/>
+Step :: Clicked on All cancelled option<br/>
+Clicked on element//button[normalize-space()='Remove']<br/>
+Step :: Clicked on remove button<br/>
+Clicked on element//button[normalize-space()='All Pending']<br/>
+Step :: Clicked on All pending option<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[text()='Pending']<br/>
+Step :: Clicked on pending menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[@href='/my-trades/cancelled']<br/>
+Step :: Clicked on cancel button<br/>
+Step :: No record found text shows:No records to display<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of cancle option</h1>
+<h2 id="m13">Test.OpenTradesTestcases:cancleOption_CallTest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//button[text()='Cancel ']/i[@class="mdi mdi-chevron-down"]<br/>
+Step :: Clicked on cancelled button<br/>
+Clicked on element//button[normalize-space()='All Pending Calls']<br/>
+Step :: clicked on all pending calls<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[text()='Pending']<br/>
+Step :: Clicked on pending menu<br/>
+Step :: Up direction entry is not visible<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Searchbar</h1>
+<h2 id="m14">Test.OpenTradesTestcases:searchbar</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Step :: Clicked on Search icon<br/>
+Step :: Clear search icon is visible<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Step :: Enter data in Search field<br/>
+Step :: Result is visible<br/>
+Clicked on element//*[@aria-label='Clear search']<br/>
+Step :: Clicked on clear search<br/>
+Step :: Result is not visible hence testcase passed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Column option</h1>
+<h2 id="m15">Test.OpenTradesTestcases:column_Test</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[name()='path' and contains(@d,'M14.67 5v1')]<br/>
+Step :: Column icon should visible properly<br/>
+Step :: max loss option is visible properly<br/>
+Clicked on element//*[@data-rbd-draggable-id="entryTimeStampAsDateOnly"]/div[1]<br/>
+Step :: Entry date option turn on<br/>
+Clicked on element//*[@data-rbd-draggable-id="entryTimeStampAsDateOnly"]/div[1]<br/>
+Step :: Entry date option turn off<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Full Screen icon</h1>
+<h2 id="m16">Test.OpenTradesTestcases:fullScreen_Test</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//button[@aria-label='Show/Hide filters']//*[name()='svg']<br/>
+Step :: CLicked on full screen icon to zoom out mode<br/>
+Step :: Zoom in mode open<br/>
+Clicked on element//button[@aria-label='Show/Hide filters']//*[name()='svg']<br/>
+Step :: CLicked on full screen icon to zoom in mode<br/>
+Step :: Back to zoom out mode open<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Table Test</h1>
+<h2 id="m17">Test.OpenTradesTestcases:table_Test</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: CLicked on First value of Account column<br/>
+Step :: View Trade title is visible<br/>
+Clicked on element//tbody/tr[1]/td[@class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-17l33vd"]/a<br/>
+Step :: CLicked on  chart icon in first row<br/>
+Step :: Chart details title is visible<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Pagination icons</h1>
+<h2 id="m18">Test.OpenTradesTestcases:pagination_Test</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Scrolled down to //div[text()='10']<br/>
+Clicked on element//button[@title='Go to next page']//*[name()='svg']<br/>
+Step :: Clicked on Next icon<br/>
+Clicked on element//button[@title='Go to previous page']//*[name()='svg']<br/>
+Step :: Clicked on Previous icon<br/>
+Step :: Previous icon is not visible hence functionality is working fine<br/>
+Clicked on element//button[@title='Go to last page']//*[name()='svg']<br/>
+Step :: Clicked on last page icon<br/>
+Clicked on element//button[@title='Go to first page']//*[name()='svg']<br/>
+Step :: Clicked on First page view icon<br/>
+Step :: Go to first page icon is disabled hence functionality is working fine<br/>
+Scrolled down to //div[text()='10']<br/>
+Clicked on //div[text()='10']<br/>
+Step :: Clicked on Row count<br/>
+Clicked on element//li[normalize-space()='25']<br/>
+Step :: Clicked on Row count 25<br/>
+Step :: Element size is 25<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of refresh icons</h1>
+<h2 id="m19">Test.OpenTradesTestcases:refreshData</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//i[@id='test']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of view trade page</h1>
+<h2 id="m20">Test.ViewTradePageTestcases:viewTradeUI</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Edit trade</h1>
+<h2 id="m21">Test.ViewTradePageTestcases:editTrade</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action Option<br/>
+Clicked on element//a[text()="Edit trade"]<br/>
+Step :: Clicked on Edit trade Option<br/>
+Step :: Stop value field is visible<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Flag trades</h1>
+<h2 id="m22">Test.ViewTradePageTestcases:flagTrade</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action Option<br/>
+Clicked on element//button[@aria-expanded="true"]//parent::div//button[text()="Flag trade"]<br/>
+Step :: Clicked on Flage Trade Option<br/>
+Step :: Success message is visible: flag trade successfully<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action Option<br/>
+Step :: Flag trade option work as expected<br/>
+Clicked on element//button[@aria-expanded="true"]//parent::div//button[text()="Unflag trade"]<br/>
+Step :: Clicked on Unflage Trade Option<br/>
+Step :: Success message is visible: <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Manage Trades</h1>
+<h2 id="m23">Test.ViewTradePageTestcases:manageTrades</h2>
+<div>
+<h3>Test Messages</h3>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+Clicked on element//button[normalize-space()='Action']<br/>
+Step :: Clicked on Action Option<br/>
+Clicked on element//button[normalize-space()='Remove Manage Trade']<br/>
+Step :: Clicked on remove manager trade<br/>
+Clicked on element//button[normalize-space()='Yes']<br/>
+Step :: Clicked on manager popup yes button<br/>
+<h3>Failure</h3>
+<div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[normalize-space()=&apos;Manage trade&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62981}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62981/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e6d2ae7e3cb3292d064c3fb98abf7c7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Utils.Helper.waitForElement(Helper.java:153)
+	at Utils.Helper.click(Helper.java:298)
+	at Page.ViewTrade.manageTrade(ViewTrade.java:303)
+	at Test.ViewTradePageTestcases.manageTrades(ViewTradePageTestcases.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 10 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of other action menus</h1>
+<h1>Verify functionality of Overview feature in view trade page</h1>
+<h2 id="m24">Test.ViewTradePageTestcases:overviewTestcases</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+Clicked on element//button[normalize-space()='Overview']<br/>
+Clicked on element//div[@class="col-12 col-sm-6"]/p[2]/a[@href]<br/>
+Step :: Monthly history title is display hence view history link working fine<br/>
+Clicked on element//i[@class='fas fa-chart-line']<br/>
+Step :: Chart details title is display hence view Chart icon link working fine<br/>
+Clicked on element//div[@class="col-12 col-sm-6"]/p[9]/a[@href]<br/>
+Step :: Chart details title is display hence view Chart icon link working fine<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Comment search in view trade page</h1>
+<h2 id="m25">Test.ViewTradePageTestcases:commentSearchTestcases</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+Clicked on element//button[normalize-space()='Comments']<br/>
+Clicked on element//div[@class='table-search']/div/input<br/>
+Clicked on element//div[@class='table-search']/div/input<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify add comment without fill up comment field in view trade page</h1>
+<h2 id="m26">Test.ViewTradePageTestcases:addCommentBlankField</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Clicked on //button[normalize-space()='Save Comment']<br/>
+Step :: Clicked on save comment button<br/>
+Step :: Validation message shows for comment<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify Add comment with long sentance data in view trade page</h1>
+<h2 id="m27">Test.ViewTradePageTestcases:AddComment_longSentanceData</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+Clicked on element//textarea[@id='FormControlTextarea']<br/>
+Step :: Added comment in comment field<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Clicked on //button[normalize-space()='Save Comment']<br/>
+Step :: Clicked on save comment button<br/>
+Step :: Success message is displayed<br/>
+Clicked on element//button[normalize-space()='Comments']<br/>
+Step :: Added comment in comment section<br/>
+Step :: Data is visible properly in comment section<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify add comment by save and close trades</h1>
+<h2 id="m28">Test.ViewTradePageTestcases:AddComment_SaveAndCloseTrade</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//*[@class="MuiTableBody-root css-vgykel"]/tr[1]/td[1]/a[1]<br/>
+Step :: CLicked on First value of symbol column<br/>
+Step :: View Trade title is visible<br/>
+Step :: Action option is visible<br/>
+Step :: Other_ActionMenu is visible<br/>
+Step :: VirtualRealMenu is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Overview is visible<br/>
+Step :: Trade is visible<br/>
+Step :: Position is visible<br/>
+Step :: StopLossAndProfitTarget is visible<br/>
+Step :: Comments is visible<br/>
+Step :: AddCommentArea is visible<br/>
+Step :: SaveCommentAndCloseTrade is visible<br/>
+Step :: SaveComment Button is visible<br/>
+Scrolled down to //button[normalize-space()='Save Comment And Close Trade']<br/>
+Clicked on //button[normalize-space()='Save Comment And Close Trade']<br/>
+Step :: Clicked on save comment and close trade button<br/>
+Step :: Confirmation popoup is visible<br/>
+Clicked on element//button[@aria-label='Close']<br/>
+Step :: Clicked on close icon of confirmation popup<br/>
+Clicked on element//button[normalize-space()='Save Comment And Close Trade']<br/>
+Clicked on element//button[normalize-space()='No']<br/>
+Step :: Clicked on No button of confirmation popup<br/>
+Clicked on element//button[normalize-space()='Save Comment And Close Trade']<br/>
+Clicked on element//button[normalize-space()='Yes']<br/>
+Step :: Clicked on Yes button of confirmation popup<br/>
+Step :: Validation is display for blank and field<br/>
+Clicked on element//textarea[@id='FormControlTextarea']<br/>
+Clicked on element//button[normalize-space()='Save Comment And Close Trade']<br/>
+Step :: Clicked on save comment and close trade button<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of Cancelled page.</h1>
+<h2 id="m29">Test.CancelledPageTestcases:cancelledPageUI</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[@href='/my-trades/cancelled']<br/>
+Step :: Clicked on cancel button<br/>
+Step :: No record found text shows:No records to display<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of close Page.</h1>
+<h2 id="m30">Test.ClosePageTestCases:closePageUITest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[normalize-space()='Closed']<br/>
+Step :: Clicked on Closed menu<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of my team page.</h1>
+<h1>Verify UI of monthly History page.</h1>
+<h2 id="m31">Test.MonthlyHistoryTestcases:monthlyHistoryUI</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Monthly History']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Submit button</h1>
+<h2 id="m32">Test.MonthlyHistoryTestcases:submitbutton</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Monthly History']<br/>
+Clicked on element//select[@name='sector']<br/>
+Clicked on element//*[normalize-space()='ALL']<br/>
+Clicked on element//select[@name='callOrPut']<br/>
+Clicked on element//select[@name='callOrPut']<br/>
+Clicked on element//select[@name="substantialHistoryOnly"]<br/>
+Clicked on element//*[normalize-space()='History']<br/>
+Clicked on element//select[@name="month"]<br/>
+Clicked on element//*[normalize-space()='Feb']<br/>
+Clicked on element//input[@name='symbol']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify Functinality of Table's feature</h1>
+<h2 id="m33">Test.MonthlyHistoryTestcases:tableTest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Monthly History']<br/>
+Clicked on element//select[@name='sector']<br/>
+Clicked on element//*[normalize-space()='ALL']<br/>
+Clicked on element//select[@name='callOrPut']<br/>
+Clicked on element//select[@name='callOrPut']<br/>
+Clicked on element//select[@name="substantialHistoryOnly"]<br/>
+Clicked on element//*[normalize-space()='History']<br/>
+Clicked on element//select[@name="month"]<br/>
+Clicked on element//*[normalize-space()='Feb']<br/>
+Clicked on element//input[@name='symbol']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Clicked on element//*[@aria-label='Clear search']<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Clicked on element//*[@aria-label='Clear search']<br/>
+Clicked on element//*[name()='path' and contains(@d,'M14.67 5v1')]<br/>
+Step :: Column icon should visible properly<br/>
+Clicked on element//li[@data-rbd-drag-handle-draggable-id="latestClosingPrice"]//span[contains(@class,'Mui-checked')]<br/>
+Clicked on element//*[name()='path' and contains(@d,'M14.67 5v1')]<br/>
+Clicked on element//li[@data-rbd-drag-handle-draggable-id="latestClosingPrice"]/div[1]//span[contains(@class,'colorPrimary')]<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify redirection of symbol link in monthly history page</h1>
+<h2 id="m34">Test.MonthlyHistoryTestcases:symbolLinkRedirection</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Monthly History']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element(//a[text()='AMD'])[1]<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify redirection of chart link in monthly history page</h1>
+<h2 id="m35">Test.MonthlyHistoryTestcases:chartLInkRedirection</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Monthly History']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element//tbody/tr[1]/td[@class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-17l33vd"]/a<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify redirection of create trade link </h1>
+<h2 id="m36">Test.MonthlyHistoryTestcases:createTradelinkRedirection</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Monthly History']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element//tbody/tr[1]/td[@class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1yboaon"]/a<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of My Team page.</h1>
+<h2 id="m37">Test.MyTeamPageTestCases:myTeamPageUITest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[normalize-space()='My Team']<br/>
+Step :: Clicked on My Team menu<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of Trader account Details UI</h1>
+<h2 id="m38">Test.TraderAccountDetailsTestcases:traderAccountDetailsUI</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify redirection of view equity curve</h1>
+<h2 id="m39">Test.TraderAccountDetailsTestcases:redirectionOf_ViewEquity</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='View Equity Curve']<br/>
+Step :: Click on VIew Equity curve button<br/>
+Step :: Trader Equity Curve title is visible<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify redirection of Edit button</h1>
+<h2 id="m40">Test.TraderAccountDetailsTestcases:redirectionOf_Edit_Button</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='Edit']<br/>
+Step :: Click on VIew Equity curve button<br/>
+Step :: Strategy field is visible<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify redirection of View performance button</h1>
+<h2 id="m41">Test.TraderAccountDetailsTestcases:redirectionOf_ViewPerformance_Button</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='Edit']<br/>
+Step :: Click on VIew Equity curve button<br/>
+Step :: Strategy field is visible<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of EDIT page features</h1>
+<h2 id="m42">Test.TraderAccountDetailsTestcases:editpageFunctionality</h2>
+<div>
+<h3>Test Messages</h3>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='Edit']<br/>
+Step :: Click on VIew Equity curve button<br/>
+Step :: description for followers and name for follower field is disabled<br/>
+Clicked on element//label[normalize-space()='Followers Allowed']<br/>
+Step :: CHeck the checkbox of follower allowed<br/>
+Step :: description for followers and name for follower field is enabled<br/>
+Clicked on element//label[normalize-space()='Followers Allowed']<br/>
+Step :: description for followers and name for follower field is disabled<br/>
+Clicked on element//button[normalize-space()='Save']<br/>
+Step :: Click on save button<br/>
+<h3>Failure</h3>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h4[normalize-space()=&apos;Trader Account Detail&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [332662104e20cde0eb08e06b8ee6b1ed, findElement {using=xpath, value=//h4[normalize-space()=&apos;Trader Account Detail&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63650/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 332662104e20cde0eb08e06b8ee6b1ed
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Utils.Helper.scrollToElement(Helper.java:291)
+	at Page.TraderAccountDetails.editPage(TraderAccountDetails.java:220)
+	at Test.TraderAccountDetailsTestcases.editpageFunctionality(TraderAccountDetailsTestcases.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 13 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of view performance feature</h1>
+<h2 id="m43">Test.TraderAccountDetailsTestcases:viewPerformanceFunctionality</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='View Performance']<br/>
+Step :: Click on VIew Performance button<br/>
+Step :: Summary report title is visible<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify validation message for edit data with blank field</h1>
+<h2 id="m44">Test.TraderAccountDetailsTestcases:editDataWithBlankFieldTest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='Edit']<br/>
+Step :: Click on VIew Equity curve button<br/>
+Scrolled down to //button[normalize-space()='Save']<br/>
+Clicked on //button[normalize-space()='Save']<br/>
+Step :: Click on save button<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of trade type field downdown</h1>
+<h2 id="m45">Test.TraderAccountDetailsTestcases:tradeTypeFieldDropdownTest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='Edit']<br/>
+Scrolled down to //label[normalize-space()='Trade Types']/following-sibling::div<br/>
+Clicked on //label[normalize-space()='Trade Types']/following-sibling::div<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of select multiple option trade</h1>
+<h2 id="m46">Test.TraderAccountDetailsTestcases:selectmultipleOptionInTradeType</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='Edit']<br/>
+Scrolled down to //label[normalize-space()='Trade Types']/following-sibling::div<br/>
+Clicked on //label[normalize-space()='Trade Types']/following-sibling::div<br/>
+Clicked on element//*[normalize-space()='History']<br/>
+Step :: Cross icon is visible with history option<br/>
+Clicked on element//div[@aria-label='Remove History']//*[name()='svg']<br/>
+Step ::  Click on Cross icon<br/>
+Clicked on element//label[normalize-space()='Trade Types']/following-sibling::div<br/>
+Clicked on element//*[normalize-space()='History']<br/>
+Clicked on element//label[normalize-space()='Trade Types']/following-sibling::div<br/>
+Clicked on element//*[normalize-space()='Earnings']<br/>
+Clicked on element//label[normalize-space()='Trade Types']/following-sibling::div<br/>
+Clicked on element//*[normalize-space()='Precise']<br/>
+Step :: Cross icon is visible for all selected trade type<br/>
+Clicked on element//div[17]//div[1]//div[1]//div[1]//div[2]//div[1]//*[name()='svg']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of notification field</h1>
+<h2 id="m47">Test.TraderAccountDetailsTestcases:notificationFieldUITest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='Edit']<br/>
+Scrolled down to //label[normalize-space()='Notifications']/following-sibling::div<br/>
+Clicked on //label[normalize-space()='Notifications']/following-sibling::div<br/>
+Step :: Notification dropdown open and options visible<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify that user able to select notification from notification field</h1>
+<h2 id="m48">Test.TraderAccountDetailsTestcases:notificationFieldTest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Clicked on element//button[normalize-space()='Edit']<br/>
+Scrolled down to //label[normalize-space()='Notifications']/following-sibling::div<br/>
+Clicked on //label[normalize-space()='Notifications']/following-sibling::div<br/>
+Step :: Notification dropdown open and options visible<br/>
+Clicked on element//*[normalize-space()='System Admin']<br/>
+Step :: System admin cross icon<br/>
+Clicked on element//div[@aria-label='Remove System Admin']<br/>
+Clicked on element//label[normalize-space()='Notifications']/following-sibling::div<br/>
+Clicked on element//*[normalize-space()='System Admin']<br/>
+Clicked on element//label[normalize-space()='Notifications']/following-sibling::div<br/>
+Clicked on element//div[contains(text(),'Steve Gray')]<br/>
+Clicked on element//label[normalize-space()='Notifications']/following-sibling::div<br/>
+Clicked on element//div[contains(text(),'Brandon Gray')]<br/>
+Clicked on element//div[@class='row']/div[19]/div[1]/div[1]/div[1]/div[2]/div[1]//*[name()='svg']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify that comment section in user able to search comment</h1>
+<h2 id="m49">Test.TraderAccountDetailsTestcases:commentSectionTest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Step :: Clear search is visible<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Step :: Search data is visible<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Clicked on element//*[@aria-label='Clear search']<br/>
+Step :: Clicked on clear search icon<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify column icon functionality in comment list</h1>
+<h2 id="m50">Test.TraderAccountDetailsTestcases:columnIcon_CommentList_Test</h2>
+<div>
+<h3>Test Messages</h3>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Clicked on element//button[@id='showHideColumn']//*[name()='svg']<br/>
+Step :: Date added option is visible<br/>
+Clicked on element//div[@role='presentation']//li[1]/div[1]<br/>
+<h3>Failure</h3>
+<div class="stacktrace">java.lang.AssertionError: expected [false] but found [true]
+	at Page.TraderAccountDetails.columnIcon_CommentList(TraderAccountDetails.java:372)
+	at Test.TraderAccountDetailsTestcases.columnIcon_CommentList_Test(TraderAccountDetailsTestcases.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 14 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of full screen icon in comment list</h1>
+<h2 id="m51">Test.TraderAccountDetailsTestcases:fullScreenIcon_Commentlist_Test</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Clicked on element//*[@data-testid="FullscreenIcon"]//parent::button<br/>
+Clicked on element//*[@data-testid="FullscreenExitIcon"]//parent::button<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of save comment in trader list</h1>
+<h2 id="m52">Test.TraderAccountDetailsTestcases:savecomment_traderList_Test</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Clicked on element//a[contains(text(), "Open")]<br/>
+Step :: Clicked on open menu<br/>
+Clicked on element//tbody/tr[1]/td[4]//a<br/>
+Step :: Click on first value of account<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Step :: Title is visible of all elements of trader details page<br/>
+Scrolled down to //button[normalize-space()='Save Comment']<br/>
+Clicked on element//button[normalize-space()='Save Comment']<br/>
+Clicked on element//textarea[@id='FormControlTextarea']<br/>
+Clicked on element//button[normalize-space()='Save Comment']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of verified page </h1>
+<h2 id="m53">Test.VerifiedPageTestcases:verifiedPageUITest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//span[text()='My Trades']<br/>
+Step :: Clicked on trade menu<br/>
+Clicked on element//a[@href='/my-trades/verified']<br/>
+Step :: Clicked on Verification menu<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify UI of Technical history page </h1>
+<h2 id="m54">Test.TechnicalHistoryTestcases:technicalHistoryUITest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Technical History']<br/>
+Step :: UI is visible properly<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Technical history page submit button </h1>
+<h2 id="m55">Test.TechnicalHistoryTestcases:submitbutton</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Technical History']<br/>
+Step :: UI is visible properly<br/>
+Clicked on element//select[@name='sector']<br/>
+Clicked on element//*[normalize-space()='ALL']<br/>
+Clicked on element//select[@id='skillsInput']<br/>
+Clicked on element//option[@value='Custom']<br/>
+Clicked on element//select[@id='conditionInput']<br/>
+Clicked on element//option[@value='ON_BOTTOM_BOLLINGER_BAND']<br/>
+Clicked on element//input[@name='startDate']<br/>
+Clicked on element(//select[@aria-label='Month'])[1]<br/>
+Clicked on element(//option[@value='2'][normalize-space()='March'])[1]<br/>
+Clicked on element//span[@aria-label='March 1, 2023']<br/>
+Clicked on element//select[@name='timeFrame']<br/>
+Clicked on element//option[@value='1d_233m']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Technical history page table</h1>
+<h2 id="m56">Test.TechnicalHistoryTestcases:tableTest</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Technical History']<br/>
+Step :: UI is visible properly<br/>
+Clicked on element//select[@name='sector']<br/>
+Clicked on element//*[normalize-space()='ALL']<br/>
+Clicked on element//select[@id='skillsInput']<br/>
+Clicked on element//option[@value='Custom']<br/>
+Clicked on element//select[@id='conditionInput']<br/>
+Clicked on element//option[@value='ON_BOTTOM_BOLLINGER_BAND']<br/>
+Clicked on element//input[@name='startDate']<br/>
+Clicked on element(//select[@aria-label='Month'])[1]<br/>
+Clicked on element(//option[@value='2'][normalize-space()='March'])[1]<br/>
+Clicked on element//span[@aria-label='March 1, 2023']<br/>
+Clicked on element//select[@name='timeFrame']<br/>
+Clicked on element//option[@value='1d_233m']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Clicked on element//*[@aria-label='Clear search']<br/>
+Clicked on element//div[@class="MuiFormControl-root MuiTextField-root css-14c8yrx"]//input<br/>
+Clicked on element//*[@aria-label='Clear search']<br/>
+Clicked on element//*[name()='path' and contains(@d,'M14.67 5v1')]<br/>
+Step :: Column icon should visible properly<br/>
+Clicked on element//li[@data-rbd-drag-handle-draggable-id="latestClosingPrice"]//span[contains(@class,'Mui-checked')]<br/>
+Clicked on element//*[name()='path' and contains(@d,'M14.67 5v1')]<br/>
+Clicked on element//li[@data-rbd-drag-handle-draggable-id="latestClosingPrice"]/div[1]//span[contains(@class,'colorPrimary')]<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of Create Trade link in back month history page</h1>
+<h2 id="m57">Test.TechnicalHistoryTestcases:createTradelinkRedirection</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Technical History']<br/>
+Step :: UI is visible properly<br/>
+Clicked on element//select[@name='sector']<br/>
+Clicked on element//*[normalize-space()='ALL']<br/>
+Clicked on element//select[@id='skillsInput']<br/>
+Clicked on element//option[@value='Custom']<br/>
+Clicked on element//select[@id='conditionInput']<br/>
+Clicked on element//option[@value='ON_BOTTOM_BOLLINGER_BAND']<br/>
+Clicked on element//input[@name='startDate']<br/>
+Clicked on element(//select[@aria-label='Month'])[1]<br/>
+Clicked on element(//option[@value='2'][normalize-space()='March'])[1]<br/>
+Clicked on element//span[@aria-label='March 1, 2023']<br/>
+Clicked on element//select[@name='timeFrame']<br/>
+Clicked on element//option[@value='1d_233m']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element//tbody/tr[1]/td[@class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1yboaon"]/a<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Verify functionality of download file in back month history page</h1>
+<h2 id="m58">Test.TechnicalHistoryTestcases:downloadFileVerification</h2>
+<div>
+Step :: Steps: Open URL - https://testing.focusedtrading.com/login<br/>
+Clicked on element//Input[@placeholder="Username*"]<br/>
+Step :: Step: Username entered<br/>
+Clicked on element//Input[@placeholder="Password*"]<br/>
+Step :: Step: Password entered<br/>
+Clicked on element//button[@type="submit"]<br/>
+Step :: Step: Clicked on login button<br/>
+Clicked on element//span[normalize-space()='Research']<br/>
+Clicked on element//a[normalize-space()='Technical History']<br/>
+Step :: UI is visible properly<br/>
+Clicked on element//select[@name='sector']<br/>
+Clicked on element//*[normalize-space()='ALL']<br/>
+Clicked on element//select[@id='skillsInput']<br/>
+Clicked on element//option[@value='Custom']<br/>
+Clicked on element//select[@id='conditionInput']<br/>
+Clicked on element//option[@value='ON_BOTTOM_BOLLINGER_BAND']<br/>
+Clicked on element//input[@name='startDate']<br/>
+Clicked on element(//select[@aria-label='Month'])[1]<br/>
+Clicked on element(//option[@value='2'][normalize-space()='March'])[1]<br/>
+Clicked on element//span[@aria-label='March 1, 2023']<br/>
+Clicked on element//select[@name='timeFrame']<br/>
+Clicked on element//option[@value='1d_233m']<br/>
+Clicked on element//button[normalize-space()='Submit']<br/>
+Clicked on element//button[@id='exportAllData']//*[name()='svg']<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

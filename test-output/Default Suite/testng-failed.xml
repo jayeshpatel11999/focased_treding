@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="automated-testing(failed)">
+    <classes>
+      <class name="Test.TraderAccountDetailsTestcases">
+        <methods>
+          <include name="selectmultipleOptionInTradeType"/>
+          <include name="redirectionOf_ViewPerformance_Button"/>
+          <include name="tearDown"/>
+          <include name="redirectionOf_ViewEquity"/>
+          <include name="tradeTypeFieldDropdownTest"/>
+          <include name="viewPerformanceFunctionality"/>
+          <include name="fullScreenIcon_Commentlist_Test"/>
+          <include name="setup"/>
+          <include name="savecomment_traderList_Test"/>
+          <include name="notificationFieldUITest"/>
+          <include name="notificationFieldTest"/>
+          <include name="traderAccountDetailsUI"/>
+          <include name="redirectionOf_Edit_Button"/>
+        </methods>
+      </class> <!-- Test.TraderAccountDetailsTestcases -->
+    </classes>
+  </test> <!-- automated-testing(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
